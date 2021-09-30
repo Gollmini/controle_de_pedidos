@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>
+            Bem vindo!! <br> Faça login ou cadastre-se
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="primary" [fullscreen]="true">
+    <div class="dados-cadastro">
+        <ion-card>
+         
+            <ion-item lines="none">
+                <ion-label position="stacked" type="user">Usuário</ion-label>
+                <ion-input placeholder="Insira seu usuário"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="stacked" type="password">Senha</ion-label>
+                <ion-input placeholder="Digite a senha"></ion-input>
+            </ion-item>
+        </ion-card>
+
+        <ion-card>
+            <ion-button expand="block" routerLink="/home">Logar</ion-button>
+            
+            <ion-button expand="block" routerLink="/signtarure">Criar Conta</ion-button>
+
+        </ion-card>
+    </div>
+
+
+</ion-content>
