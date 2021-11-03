@@ -15,17 +15,16 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
-
+  {
+    path: 'instrucoes',
+    loadChildren: () => import('./instrucoes/instrucoes.module').then( m => m.InstrucoesPageModule)
+  },
   
   {
     path: 'cadastro-realizado',
     loadChildren: () => import('./cadastro-realizado/cadastro-realizado.module').then( m => m.CadastroRealizadoPageModule)
   },
 
-  {
-    path: 'register',
-    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
-  },
 
   {
     path: 'signtarure',
